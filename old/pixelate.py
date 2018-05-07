@@ -64,9 +64,9 @@ for i in range(10):
             #save downsized results
             if not os.path.isdir('000' + str(i) + '/R' + str(pixelSize - 1)):
                 os.mkdir('000' + str(i) + '/R' + str(pixelSize - 1))
-            if not os.path.isdir('000' + str(i) + '/R' + str(pixelSize - 1) + '/train/'):
-                os.mkdir('000' + str(i) + '/R' + str(pixelSize - 1) + '/train/')
-            image.save('000' + str(i) + '/R' + str(pixelSize - 1) + '/train/' + im[10:])
+            if not os.path.isdir('000' + str(i) + '/R' + str(pixelSize - 1) + '/test/'):
+                os.mkdir('000' + str(i) + '/R' + str(pixelSize - 1) + '/test/')
+            image.save('000' + str(i) + '/R' + str(pixelSize - 1) + '/test/' + im[10:])
             
             image = image.resize((width, height), Image.NEAREST)
             
